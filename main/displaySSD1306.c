@@ -66,6 +66,7 @@ void displayInit()
     ESP_ERROR_CHECK(esp_lcd_new_panel_ssd1306(io_handle, &panel_config, &panel_handle));
     ESP_ERROR_CHECK(esp_lcd_panel_reset(panel_handle));
     ESP_ERROR_CHECK(esp_lcd_panel_init(panel_handle));
+    esp_lcd_panel_io_tx_param(io_handle, 0xA7, NULL, 0);  // 0xA7 = invertido, 0xA6 = normal
     ESP_ERROR_CHECK(esp_lcd_panel_disp_on_off(panel_handle, true));
     //------------------------------------------------
     

@@ -1,11 +1,12 @@
-idf_component_register(
-    SRCS 
-        "CBMP280.cpp" 
-        "CGlobalResources.cpp" 
-        "CI2C.cpp" 
-        "cSMP3011.cpp" 
-        "displaySSD1306.c" 
-        "main.cpp"
+idf_component_register(SRCS 
+    main.cpp
+    cSMP3011.cpp
+    CBMP280.cpp
+    CGlobalResources.cpp
+    CI2C.cpp
+    displaySSD1306.c              
     INCLUDE_DIRS 
-        "."
+    "."
+    REQUIRES 
+    main
 )

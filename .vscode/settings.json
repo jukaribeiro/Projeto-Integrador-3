@@ -17,5 +17,7 @@
     "esp_lvgl_port.h": "c",
     "cstdlib": "c",
     "displayssd1306.h": "c"
-  }
+  },
+  "idf.currentSetup": "/home/jukaribeiro/.espressif/v5.3.5/esp-idf",
+  "idf.port": "/dev/ttyUSB0"
 }
