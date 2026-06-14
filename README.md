@@ -1,11 +1,11 @@
 ---
 title: Projeto Integrador III
 ---
-# Manômetro para Pneus
+## Manômetro para Pneus
 
 Autor: Julio C L Ribeiro  
 
-## 🔑 Características principais  
+### 🔑 Características principais  
 * **Leituras de Pressão individualizadas:**Leitura da pressão de mais de um pneu, com dados individualizados na tela, levando em consideração as devidas compensações de temperatura e pressão ambiente.
 * **Conectividade Sem Fio:** Envio dos dados coletados para dispositivos móveis conectados via Wi-Fi própria dispensando internet.
 * **Respeito a biblioteca fornecida:** Modificamos apenas os arquivos main.cpp e o CMakeList.txt para a compilação. Obs.: Uma única modificação em displaySSD1306.c para inverter o preto/branco.
