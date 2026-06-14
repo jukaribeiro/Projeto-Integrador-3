@@ -1,6 +1,4 @@
----
-title: Projeto Integrador III
----
+# PROJETO INTEGRADOR III
 ## Manômetro para Pneus
 
 Autor: Julio C L Ribeiro  
