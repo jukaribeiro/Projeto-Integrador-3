@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Integrador III - Manômetro para Pneus</title>
-    <!-- Estilo minimalista e elegante para o seu Markdown -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         body {
@@ -22,19 +21,23 @@
 <body class="markdown-body">
     <div id="content">Carregando documentação...</div>
 
-    <!-- Script que converte seu README.md automaticamente em HTML de site -->
     <script src="https://jsdelivr.net"></script>
     <script>
+        // Tenta carregar o arquivo localmente
         fetch('README.md')
             .then(response => {
-                if (!response.ok) throw new Error('Erro ao carregar o arquivo README.md');
+                if (!response.ok) {
+                    // Se falhar (erro de maiúscula/minúscula no servidor), busca o link direto público
+                    return fetch('https://githubusercontent.com');
+                }
                 return response.text();
             })
+            .then(response => typeof response === 'string' ? response : response.text())
             .then(text => {
                 document.getElementById('content').innerHTML = marked.parse(text);
             })
             .catch(err => {
-                document.getElementById('content').innerHTML = `<p style="color:red">${err.message}</p>`;
+                document.getElementById('content').innerHTML = `<p style="color:red">Erro ao carregar o conteúdo. Por favor, verifique o arquivo README.md.</p>`;
             });
     </script>
 </body>
