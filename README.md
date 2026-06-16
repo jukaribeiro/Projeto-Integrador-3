@@ -19,4 +19,5 @@ Exemplo de telas exibidas em um celular celular conectado, durante os principais
 ---
 
 [Clique aqui para ver o código fonte deste projeto](https://github.com/jukaribeiro/Projeto-Integrador-3)
-[[Clique aqui para ver o Vídeo deste projeto](https://youtu.be/7gpSlrYxqJQ)](https://youtu.be/7gpSlrYxqJQ)
+
+[Clique aqui para ver o Vídeo deste projeto](https://youtu.be/7gpSlrYxqJQ)
