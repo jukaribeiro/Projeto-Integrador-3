@@ -24,7 +24,7 @@ Exemplo de telas exibidas em um celular celular conectado, durante os principais
 
 ## 📚 Funções utilizadas
 
-### 🔧 Fuções de corverção e correção
+### 🔧 Funções de conversão e correção
 
 | Função | Finalidade |
 |--------|------------|
